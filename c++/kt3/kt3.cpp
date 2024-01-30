@@ -25,7 +25,6 @@ class Chef {
 class ItalianChef : public Chef {
     public:
         ItalianChef(std::string x, int y, int z) : Chef(x) {
-            std::cout << "Chef " << name << " konstruktori" << std::endl;
             this->jauhot = y;
             this->vesi = z;
         };
@@ -45,6 +44,7 @@ class ItalianChef : public Chef {
         std::string getName() {
             return name;
         };
+
     private:
         int jauhot;
         int vesi;
