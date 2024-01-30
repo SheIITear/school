@@ -28,11 +28,7 @@ class ItalianChef : public Chef {
             this->jauhot = y;
             this->vesi = z;
         };
-
-        ~ItalianChef() {
-            std::cout << "Chef " << name << " destruktori" << std::endl;
-        };
-
+        
         void makePasta(int x, int y) {
             std::cout << "Chef " << name << " makes pasta with special recipe (snaps the spaghetti in half)" << std::endl;
             std::cout << "Chef " << name << " uses jauhot = " << x << std::endl;
